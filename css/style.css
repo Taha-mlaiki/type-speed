@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@400;700&family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+}
+body {
+  background-color: #ddd;
+}
+h1 {
+  padding: 20px;
+  text-align: center;
+  background-color: rgb(0, 153, 255);
+  color: white;
+  font-weight: bold;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 20px auto;
+}
+@media (max-width: 786px) {
+  .container {
+    width: 90%;
+  }
+}
+.container .level-sec {
+  padding: 20px;
+  text-align: center;
+  background-color: white;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: -17px;
+}
+.container .level-sec span {
+  color: green;
+  position: relative;
+}
+.container .level-sec span::before {
+  content: "[ ";
+}
+.container .level-sec span::after {
+  content: " ]";
+}
+.container .start {
+  background-color: #009688;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container input {
+  width: 100%;
+  padding: 15px;
+  outline: none;
+  text-align: center;
+  font-size: 18px;
+  border: 2px solid rgb(0, 153, 255);
+  border-radius: 4px;
+}
+.comming-words {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  flex-wrap: wrap;
+}
+.comming-words div {
+  background-color: rgb(0, 153, 255);
+  padding: 15px;
+  margin: 5px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+}
+.time-left {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  padding: 16px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.time-left span {
+  color: green;
+  font-weight: bold;
+}
+.words {
+  padding: 15px;
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  user-select: none;
+  color: rgb(0, 153, 255);
+}
+.choose {
+  display: flex;
+  margin-top: 13px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+.choose div {
+  padding: 10px 15px;
+  background-color: #2196f3;
+  color: white;
+  font-weight: bold;
+  margin-left: 3px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.good {
+  color: green;
+}
+.bad {
+  color: red;
+}
+.instruction {
+  padding: 20px;
+  font-size: 20px;
+  color: red;
+  background-color: white;
+  position: relative;
+}
+.instruction > i {
+  position: absolute;
+  left: 170px;
+  top: 39px;
+  transform: translateY(-50%);
+}
+.instruction .text {
+  color: black;
+  font-size: 14px;
+  width: 50%;
+  margin-top: 10px;
+  line-height: 1.6;
+  font-weight: bold;
+}
+.instruction .text span {
+  color: #2196f3;
+}
+.instruction .text span:last-of-type {
+  color: red;
+}

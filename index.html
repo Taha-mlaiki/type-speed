@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Type Speed Game</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1>Typing Speed Test Game</h1>
+    <div class="instruction">
+      <h3>Instructions</h3>
+      <i class="fa-solid fa-person-chalkboard"></i>
+      <div class="text">
+        <span>This is a Test Game</span>, train you fingers to be the fastest
+        typer in the world <i class="fa-solid fa-truck-fast"></i> , and you can
+        do that by clicking on the level that you want to play on, Each level
+        has his own timer if the timer finish before you finish the word
+        <span>You lose</span>, you can start again by clicking the same level
+        that you have clicked
+      </div>
+    </div>
+    <div class="choose">
+      <div class="easy">Easy</div>
+      <div class="medium">Medium</div>
+      <div class="hard">Hard</div>
+    </div>
+    <div class="container">
+      <div class="level-sec">
+        You are playing On <span class="level"></span> level & You have
+        <span class="sec"></span> Seconds To Type The Word
+      </div>
+      <div class="time-left">
+        <div>Time Left : <span class="time">0</span> Seconds</div>
+        <div>
+          Score : <span class="real-score">0</span> From
+          <span class="score"></span>
+        </div>
+      </div>
+      <div class="start">Start Playing</div>
+      <div class="words"></div>
+      <input type="text" />
+      <div class="comming-words">words will show here</div>
+    </div>
+    <script src="./js/app.js" async defer></script>
+  </body>
+</html>
