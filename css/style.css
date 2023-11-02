@@ -132,6 +132,8 @@ h1 {
   color: red;
   background-color: white;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 .instruction > i {
   position: absolute;
@@ -142,7 +144,7 @@ h1 {
 .instruction .text {
   color: black;
   font-size: 14px;
-  width: 50%;
+  width: 80%;
   margin-top: 10px;
   line-height: 1.6;
   font-weight: bold;
